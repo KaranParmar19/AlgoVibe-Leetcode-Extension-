@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Pricedown&display=swap');
+
+/* Note: Pricedown is the GTA font, but regular Google Fonts might not have it. 
+   We might need to use a lookalike or include a font file. 
+   For now, I'll use a generic fallback that's bold/blocky. */
+
+@font-face {
+    font-family: 'Pricedown';
+    src: url('chrome-extension://__MSG_@@extension_id__/assets/pricedown.ttf');
+}
+
+#gta-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2147483647; /* Max z-index */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+.gta-text {
+    font-family: 'Pricedown', 'Impact', sans-serif;
+    font-size: 8rem;
+    text-shadow: 4px 4px 0 #000;
+    letter-spacing: 2px;
+    animation: scale-in 0.5s ease-out;
+}
+
+.passed {
+    color: #F4C430; /* GTA Gold/Yellow */
+}
+
+.wasted {
+    color: #CC0000; /* GTA Red */
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gta-subtext {
+    font-family: 'Pricedown', 'Impact', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 10px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+@keyframes scale-in {
+    0% { transform: scale(2); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.fade-out {
+    transition: opacity 1s ease;
+    opacity: 0;
+}
