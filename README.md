@@ -31,4 +31,16 @@ Audio handling using .mp3 files
 <img width="1911" height="927" alt="image" src="https://github.com/user-attachments/assets/8e48a80c-9968-4fe4-a50e-ee0a243839cf" />
 
 
+How to Use on Windows
+Download or clone this repository
+Extract the ZIP file (if downloaded)
+Open Chrome / Edge and go to: chrome://extensions/
+Enable Developer Mode
+Click Load unpacked
+Select the project folder (must contain manifest.json)
+Open https://leetcode.com
+Submit a solution:
+✅ Accepted → Success sound plays
+❌ Wrong / Error → Failure sound plays
+
 
