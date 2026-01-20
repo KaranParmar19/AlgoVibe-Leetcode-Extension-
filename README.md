@@ -28,4 +28,7 @@ Audio handling using .mp3 files
 
 <img width="1919" height="930" alt="image" src="https://github.com/user-attachments/assets/a2d66a9a-81d0-4c76-a7d8-3e5025f93445" />
 
+<img width="1911" height="927" alt="image" src="https://github.com/user-attachments/assets/8e48a80c-9968-4fe4-a50e-ee0a243839cf" />
+
+
 
